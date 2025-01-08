@@ -1,0 +1,75 @@
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(136, 38, 222);
+    
+    background-position: center 25%; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    
+  }
+
+
+
+.login-container {
+    background-color: #f5d4ee;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.inicio-seccion {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.inicio-seccion label {
+   
+    font-size: 14px;
+    color: #000000;
+
+    
+}
+
+.inicio-seccion input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #007BFF;
+    border: 2px rgb(12, 255, 182);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
