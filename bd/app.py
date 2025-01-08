@@ -28,8 +28,25 @@ class user(db.Model):
         return render_template('inicio.html')
     
     @app.route('../plataforma/inicio.html')
-    def dashboard():
+    def plataforma():
         return ' Bienvenid@ a tus cursos '
+    
+    
+    @app.route ('../basedatos/users.db' , methods=['GET', 'POST'])
+    def users():
+        if request.method == 'POST':
+            username = request.form['username']
+            password = request.form['password']
+            
+            new_user = user(username=request.form['username'], password=request.form['password'])
+            db.session.add(new_user)
+            db.session.commit()
+            return redirect(url_for('login'))
+        return render_template('users.db')
+    
+    if __name__ == '__main__':
+        db.create_all()
+        app.run(debug=True)
     
     
     
