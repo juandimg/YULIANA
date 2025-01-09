@@ -32,7 +32,7 @@ class user(db.Model):
         return ' Bienvenid@ a tus cursos '
     
     
-    @app.route ('../basedatos/users.db' , methods=['GET', 'POST'])
+    @app.route ('../basedatos/registro.html' , methods=['GET', 'POST'])
     def users():
         if request.method == 'POST':
             username = request.form['username']
@@ -42,7 +42,7 @@ class user(db.Model):
             db.session.add(new_user)
             db.session.commit()
             return redirect(url_for('login'))
-        return render_template('users.db')
+        return render_template('../basedatos/registro.html')
     
     if __name__ == '__main__':
         db.create_all()
