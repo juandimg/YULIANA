@@ -58,6 +58,29 @@ h1 {
     border-radius: 20px;
 }
 
+
+.registro-seccion {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.registro-seccion label {
+   
+    font-size: 14px;
+    color: #000000;
+
+    
+}
+
+.registro-seccion input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
 .login-button {
     width: 100%;
     padding: 10px;
