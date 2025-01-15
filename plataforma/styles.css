@@ -9,5 +9,97 @@ body{
     align-items: center;
     background-color: rgb(255, 165, 225);
     padding: 1.5em;
+
+
+
+    
 }
 
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card2 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card3 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgb(243, 247, 4);
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgb(255, 3, 3);
+}
+
+.card3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgb(23, 248, 30);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card3 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+.card-content {
+    padding: 15px;
+}
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #333;
+}
+.card-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
