@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 165, 225);
+    background-color: rgb(249, 208, 235);
     padding: 1.5em;
 
 
@@ -108,4 +108,49 @@ body{
     margin: 0;
     color: #666;
     font-size: 0.95rem;
+}
+
+.footer{
+    background-color: rgb(249, 14, 171);
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+}
+
+.footer-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-conteiner div{
+    flex: 1 1 300px;
+}
+
+.footer h3{
+    font-size: 18px;
+    margin-bottom: 25px;
+
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li{
+    margin-bottom: 10px;
+}
+
+.footer ul li a{
+    color: black;
+   text-decoration: none;
+   transition : color 0.3s;
+}
+
+.footer ul li a:hover{
+    color: white;
 }
