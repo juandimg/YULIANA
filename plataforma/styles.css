@@ -111,18 +111,19 @@ body{
 }
 
 .footer{
-    background-color: rgb(249, 14, 171);
-    padding: 0.5em;
+    background-color: rgb(255, 195, 235);
+    padding:40px 20px;
     text-align: center;
     color: black;
 }
 
-.footer-conteiner{
+.footer-container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 15px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -154,3 +155,27 @@ body{
 .footer ul li a:hover{
     color: white;
 }
+
+.footer-contact p{  /*Esta es la sección de contacto*/
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-social a{
+    display: inline;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+   
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 6px;
+    border-top: 6px solid #000000;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #000000;
+  }
+
