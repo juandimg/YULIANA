@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(249, 208, 235);
+    background-color: rgb(255, 255, 255);
     padding: 1.5em;
 
 
@@ -15,6 +15,19 @@ body{
     
 }
 
+a {
+    text-decoration: none;
+  }
+
+  /* Cambia el color del enlace (opcional) */
+  a {
+    color: #c53678;
+  }
+
+  /* Agregar un estilo al pasar el cursor (opcional) */
+  a:hover {
+    color: #0056b3;
+  }
 
 
 .container {
@@ -111,7 +124,7 @@ body{
 }
 
 .footer{
-    background-color: rgb(255, 195, 235);
+    background-color:  rgb(255, 255, 255);
     padding:40px 20px;
     text-align: center;
     color: black;
@@ -128,7 +141,8 @@ body{
 }
 
 .footer-conteiner div{
-    flex: 1 1 300px;
+    flex: 1;
+    padding: 10px;
 }
 
 .footer h3{
