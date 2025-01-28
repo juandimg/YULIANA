@@ -193,3 +193,35 @@ a {
     color: #000000;
   }
 
+  .ad-section{
+    background-color: #ffdcdc;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.4rem;
+    overflow: hidden;
+    height: 52px;
+  }
+
+  .ad-des .ad{
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 100%;
+    animation: des 10s infinite;
+}
+
+.ad-des .ad.active{
+    display: block;
+}
+
+.ad{
+    width: 100%;
+    flex-shrink: 5;
+}
+
+@keyframes des {
+    
+    
+}
