@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.box{
+    width: 18px;
+}
