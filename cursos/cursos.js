@@ -3,14 +3,14 @@ let currentcurso = 0;
 const totalboxes = document.querySelectorAll('.box').length;
 const carousel = document.querySelector('.carousel');
 
-function moveRight(){
+function moveLeft(){
     if(currentcurso < totalboxes - 1){
         currentcurso++;
         updateCarousel();
     }
 }
 
-function moveLeft(){
+function moveRight (){
     if(currentcurso > 0){
         currentcurso--;
         updateCarousel();

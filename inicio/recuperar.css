@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #796464;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.recuperar-container {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 5 px solid #cb1313;
+    border-radius: 15px;
+}
+
+button{
+    background-color: #cb1313;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(51, 255, 0);
+}

@@ -1,40 +1,109 @@
-.carousel-container{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    padding: 25px;
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+    background-color: #ffffff;
+}
+
+.cursos {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 40px; /* Espacio alrededor de los productos */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    align-items: stretch;
+}
+
+
+
+.curso {
+    background-color: #ff87f1;
+    border: 1px solid #000000;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-
-.carousel{
+    padding: 20px;
+   box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Centrar el contenido del curso */
+    color: #000000;
     display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.box{
-    min-width: 20px;
-    text-align: center;
-    padding: 10px;
-  
-}
-
-.box img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.box p{
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-/*Estos son los estilos de los botones de navegación*/
-.arrow{
-    position: absolute;
+    flex-direction: column; /* Alinear el contenido verticalmente */
+    justify-content: space-between;
+    width: 85%; /* Ancho del curso */
+    height: 100%; /* Altura del curso */
     
+}
 
+.mensaje-curso {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.curso:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+    background-color: #93a143; /* Cambiar el color de fondo al hacer hover */
+.curso img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.curso h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.curso p {
+    font-size: 1em;
+    color: #000000;
+}
+
+.curso .precio {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.lista-cursos{
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+}
+
+.lista-cursos li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px; /* Espacio entre los elementos de la lista */
+    gap: 10px; /* Espacio entre el icono y el texto */
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5; /* Mejora la legibilidad */
+    }
+
+    .lista-cursos .icono{
+        flex-shrink: 0;
+        font-size: 20px;
+        margin-top:  2px;
+    }    
+
+@media (max-width: 768px) {
+    .cursos {
+        flex-wrap: wrap; /* Envuelve los productos en varias filas */
+    }
+    .curso {
+        width: 100%; /* Cada producto ocupa el 100% del ancho */
+    }
 }

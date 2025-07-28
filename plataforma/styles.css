@@ -36,6 +36,7 @@ a {
     gap: 30px;
     max-width: 1200px;
     padding: 20px;
+    align-content: center;
 }
 .card {
     text-align: center;
@@ -47,6 +48,7 @@ a {
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     text-decoration: none;
+    flex: 1 1 calc(15% - 20px)
 }
 
 .card2 {
@@ -59,6 +61,7 @@ a {
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     text-decoration: none;
+    flex: 1 1 calc(15% - 20px)
 }
 
 .card3 {
@@ -71,8 +74,113 @@ a {
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     text-decoration: none;
+    flex: 1 1 calc(15% - 20px)
 }
 
+
+/* Estilos para el cuadro */
+.cuadro {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: aqua;
+    border-radius: 20px;
+    box-shadow: #c53678;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+.cuadro h2, .cuadro h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.beneficios {
+   text-align: left;
+   max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.beneficios h4{
+    margin: px 0;
+    font-size: 20px;
+    color: black;
+    line-height:  1.5;
+
+}
+
+.cuadro p{
+    margin: 15 px 0;
+    font-size: 16px;
+}
+
+.cuadro button{
+    padding: 12px 24px;
+    background-color: #c53678;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cuadro button:hover {
+    background-color: #a02b5f; /* Cambia el color al pasar el mouse */
+}
+@media (max-width: 600px) {
+    .cuadro {
+        width: 95%; /* Más ancho en pantallas pequeñas */
+        padding: 15px; /* Menos padding */
+    }
+
+    .cuadro h2 {
+        font-size: 20px; /* Tamaño de fuente más pequeño */
+    }
+
+    .cuadro p {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    .cuadro button {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px 16px; /* Padding más pequeño */
+    }
+}
+
+/* Estilos para el título */
+.cuadro h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto */
+.cuadro p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para el botón (opcional) */
+.cuadro button {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.cuadro button:hover {
+    background-color: #0056b3;
+}
 
 .card:hover {
     transform: translateY(-5px);
@@ -194,7 +302,7 @@ a {
   }
 
   .ad-section{
-    background-color: #ffdcdc;
+    background-color: #ffc0cb;
     color: #000000;
     text-align: center;
     padding: 15px;
@@ -235,4 +343,62 @@ a {
     height: 2px;
     background-color: #000000;
     margin: 0px 0;
+}
+
+.carrusel{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.carrusel img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+slick-prev,
+.slick-next {
+    font-size: 0; /* Oculta el texto predeterminado */
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Forma circular */
+    color: rgb(0, 0, 0); /* Color del ícono */
+    z-index: 1; /* Asegura que estén por encima de las imágenes */
+    cursor: pointer;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el mouse */
+}
+
+.slick-prev {
+    left: -50px; /* Posición a la izquierda */
+}
+
+.slick-next {
+    right: -50px; /* Posición a la derecha */
+}
+
+/* Íconos de las flechas (puedes usar FontAwesome o imágenes) */
+.slick-prev::before,
+.slick-next::before {
+    font-family: "Font Awesome 5 Free"; /* Usa FontAwesome para los íconos */
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+}
+
+.slick-prev::before {
+    content: "\f104"; /* Ícono de flecha izquierda */
+}
+
+.slick-next::before {
+    content: "\f105"; /* Ícono de flecha derecha */
 }
